@@ -1,0 +1,253 @@
+:root {
+  --nav-logo-width: 200px;
+  --sec-img-width: 500px;
+  --box-widht: 500px;
+  --color-grey: #585858;
+  --color-sky-blue: #00e5c350;
+  --color-lime: #d0f989;
+  --color-light-brown: #fefaf8;
+  --color-brown: #6b3400;
+}
+
+/* Nav-bar  */
+
+.navbar-brand img {
+  width: var(--nav-logo-width);
+}
+.nav-link {
+  color: var(--color-grey) !important;
+}
+
+.navbar {
+  background-color: var(--color-sky-blue);
+  box-shadow: 0px 15px 15px var(--color-sky-blue);
+}
+
+.section {
+  margin-top: 100px;
+}
+.sec-img-container img {
+  width: var(--sec-img-width);
+}
+
+.btn-modified {
+  background-color: var(--color-lime);
+  border: none;
+  border-radius: 23px;
+  display: inline;
+  padding: 5px 15px;
+  box-shadow: 5px 5px 5px var(--color-grey);
+  cursor: pointer;
+}
+.btn-modified:hover{
+  scale: 1.1;
+}
+
+/*  login */
+
+.form-container h1 {
+  margin-bottom: 20px;
+}
+
+.form-container {
+  color: var(--color-grey);
+  background-color: var(--color-sky-blue);
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 0;
+  height: 100%;
+  border-radius: 25px;
+  position: relative;
+}
+.form-container::before {
+  content: "";
+  background-color: var(--color-sky-blue);
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  z-index: -1;
+  left: 20px;
+  bottom: 20px;
+  position: absolute;
+}
+
+.form-container-col {
+  align-content: center;
+}
+.row {
+  align-items: center;
+}
+
+/*                    report  */
+
+.report-card-section {
+  color: var(--color-grey);
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  background-color: var(--color-sky-blue);
+  height: auto;
+  min-height: 50px;
+  width: var(--box-widht);
+  padding: 60px 30px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px var(--color-grey);
+}
+.report-card-section input {
+  border: none;
+  margin: 5px 10px 10px 10px;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: 1px solid var(--color-grey);
+}
+.report-box-1-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.report-box-form-subform {
+  display: flex;
+}
+.box-2-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.hidden {
+  display: none;
+}
+
+/* report card  */
+
+.report-card-container {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+.report-card-subcontainer {
+  aspect-ratio: 1/1.414;
+  width: 95%;
+  max-width: 600px;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px var(--color-grey);
+  background-color: var(--color-light-brown);
+}
+.report-card-sub-container-outline {
+  width: 95%;
+  height: 95%;
+  font-size: 16px;
+  border: 2px solid var(--color-brown);
+  display: grid;
+  grid-template-rows: 0.5fr 0.5fr 0.8fr 3.3fr 0.5fr 0.4fr;
+  grid-template-columns: 1fr;
+}
+.grid-row {
+  border: 1px solid;
+}
+.date-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1em;
+  padding-inline: 12px;
+}
+.date-grid img {
+  width: 10em;
+}
+
+.report-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 4em;
+}
+.report-student-info {
+  font-size: 1.1em;
+  display: flex;
+  padding: 5px 40px;
+  flex-direction: column;
+}
+.report-student-info span {
+  margin-inline-start: 15px;
+  font-family: cursive;
+}
+.sub-info {
+  display: grid;
+  margin-top: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.report-marks-columns {
+  display: grid;
+  margin: 5px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(7, 1fr);
+}
+.marks-row {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+}
+.marks-column {
+  border: 1px solid var(--color-brown);
+  display: flex;
+  align-items: center;
+
+  padding-inline: 1em;
+  font-size: 1.2em;
+}
+.marks-column span {
+  font-family: cursive;
+  margin-inline: 2.5em;
+}
+
+.signature-row{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.signature-column{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.address-row{
+  border-top: 2px solid var(--color-brown) ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* report card css end */
+
+@media screen and (max-width: 768px) {
+  .section {
+    margin-top: 0px;
+  }
+  .report-card-sub-container-outline {
+    font-size: 11px;
+  }
+  .report-student-info {
+    padding: 0px 15px;
+  }
+  .form-container::before {
+    left: 5px;
+    bottom: 5px;
+  }
+
+  :root {
+    --sec-img-width: 400px;
+    --box-widht: 350px;
+  }
+}
